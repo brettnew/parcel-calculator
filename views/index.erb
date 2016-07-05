@@ -1,18 +1,30 @@
-<h1>Find how much your parcel will cost to ship!</h1>
+<h1>Find how much your parcel will cost to ship...</h1>
 
 <form action="/results">
   <div class="form-group">
-    <label for="SideA">Side A of your triangle</label>
-    <input id="SideA" name="SideA" class="form-control" type="text">
+    <label for="height">Parcel height:</label>
+    <input id="height" name="height" class="form-control" type="number">
   </div>
   <div class="form-group">
-    <label for="SideB">Side B of your triangle</label>
-    <input id="SideB" name="SideB" class="form-control" type="text">
+    <label for="width">Parcel width:</label>
+    <input id="width" name="width" class="form-control" type="number">
   </div>
   <div class="form-group">
-    <label for="SideC">Side C of your triangle</label>
-    <input id="SideC" name="SideC" class="form-control" type="text">
+    <label for="depth">Parcel depth:</label>
+    <input id="depth" name="depth" class="form-control" type="number">
+  </div>
+  <div class="form-group">
+    <label for="weight">Parcel weight:</label>
+    <input id="weight" name="weight" class="form-control" type="number">
+  </div>
+  <div class="form-group">
+    <label for="delivery">Delivery option:</label>
+    <select class="form-control" name="delivery">
+      <option value="overnight">Overnight!</option>
+      <option value="second-day">Second Day</option>
+      <option value="regular">No Rush</option>
+    </select>
   </div>
 
-  <button type="submit" class="btn-lg btn-warning">Check</button>
+  <button type="submit" class="btn-lg btn-success">Check</button>
 </form>
